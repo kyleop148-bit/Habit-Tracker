@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu"></div>
+
+  <h1>Privacy Policy</h1>
+  <p>This app stores your habits and progress locally in your browser using localStorage. No personal data is shared or collected externally.</p>
+
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      });
+  </script>
+</body>
+</html>

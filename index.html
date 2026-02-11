@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Step 2: placeholder for menu -->
+  <div id="menu"></div>
+
+  <h1>Habit Tracker</h1>
+  <input id="habitInput" placeholder="Enter a habit">
+  <button onclick="addHabit()">Add Habit</button>
+
+  <div id="habitList"></div>
+  <div id="progressCounter"></div>
+
+  <script src="script.js"></script>
+
+  <!-- Step 3: load nav.html -->
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
+

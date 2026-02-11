@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terms & Conditions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu"></div>
+
+  <h1>Terms & Conditions</h1>
+  <p>By using this Habit Tracker app, you agree to use it responsibly and understand that your data is stored locally on your device. We are not liable for any loss of data.</p>
+
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      });
+  </script>
+</body>
+</html>

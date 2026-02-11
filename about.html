@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu"></div>
+
+  <h1>About Us</h1>
+  <p>This Habit Tracker app was built to help you stay consistent with your daily routines and goals. It’s simple, effective, and designed for personal growth.</p>
+
+  <script>
+    fetch("nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
